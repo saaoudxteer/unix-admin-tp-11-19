@@ -1,0 +1,9 @@
+*.deb
+*.log
+*.o
+trace1.txt
+trace2.txt
+liste1.txt
+liste2.txt
+tp11-system-report.txt
+

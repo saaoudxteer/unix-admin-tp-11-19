@@ -1,0 +1,11 @@
+[DEFAULT]
+bantime = 15m
+findtime = 10m
+maxretry = 4
+banaction = firewallcmd-rich-rules
+backend = systemd
+
+[sshd]
+enabled = true
+port = ssh
+

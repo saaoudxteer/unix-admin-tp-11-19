@@ -1,0 +1,3 @@
+# À installer avec : sudo crontab -e
+*/3 * * * * /usr/local/sbin/nettoyage.sh
+

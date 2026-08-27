@@ -1,0 +1,15 @@
+$TTL 300
+@   IN SOA rocky1.lab.test. admin.lab.test. (
+        2026082701 ; serial
+        3600       ; refresh
+        900        ; retry
+        604800     ; expire
+        300        ; negative cache TTL
+)
+    IN NS rocky1.lab.test.
+    IN NS nakedeb.lab.test.
+
+rocky1  IN A 192.168.10.30
+nakedeb IN A 192.168.10.20
+xubuntu IN A 192.168.20.40
+

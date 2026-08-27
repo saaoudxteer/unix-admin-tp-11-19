@@ -1,0 +1,22 @@
+[Unit]
+Description=Service de traduction ROT13 du TP 16
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+DynamicUser=true
+ExecStart=/usr/local/bin/serveur-rot13.sh
+Restart=always
+RestartSec=1
+UMask=0077
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+RestrictAddressFamilies=AF_INET AF_INET6
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
